@@ -206,11 +206,13 @@ function breakStatement(num) {
   var array = [];
   for (var i = 0; i < 10; i++) {
     num += 2;
-    if (num === i) break;
-    else {
+    if (num === i) {
+      break;
+    } else {
       array.push(num);
     }
   }
+
   if (i < 10) {
     return "Se interrumpió la ejecución";
   } else {
